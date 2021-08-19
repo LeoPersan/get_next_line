@@ -20,6 +20,14 @@
 typedef unsigned int	t_size;
 # endif
 
+typedef struct	s_buffer
+{
+	int				fd;
+	int 			length;
+	char			*buffer;
+	struct s_buffer	*next;
+}				t_buffer;
+
 /**
  * @brief Return line by line of a file_descriptor
  * 
